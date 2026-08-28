@@ -270,17 +270,37 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburgerBtn = document.getElementById('hamburger-toggle');
   const mobileDrawer = document.getElementById('mobile-drawer');
   const mobileBackdrop = document.getElementById('mobile-backdrop');
+  const mobileCloseBtn = document.getElementById('mobile-drawer-close');
 
   function toggleMobileNav(open) {
     const isOpen = open !== undefined ? open : !mobileDrawer?.classList.contains('is-open');
     if (hamburgerBtn) hamburgerBtn.classList.toggle('is-active', isOpen);
     if (mobileDrawer) mobileDrawer.classList.toggle('is-open', isOpen);
     if (mobileBackdrop) mobileBackdrop.classList.toggle('is-open', isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }
 
-  hamburgerBtn?.addEventListener('click', () => toggleMobileNav());
+  window.toggleMobileNav = toggleMobileNav;
+
+  hamburgerBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMobileNav();
+  });
+  
+  mobileCloseBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleMobileNav(false);
+  });
+  
   mobileBackdrop?.addEventListener('click', () => toggleMobileNav(false));
+
+  // Auto-close mobile drawer when any link is clicked
+  document.querySelectorAll('.mobile-nav-link, .mobile-nav-footer a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggleMobileNav(false);
+    });
+  });
 
   // Dynamic Header Scroll State (Transparent over hero -> Frosted glass on scroll)
   const siteHeader = document.getElementById('site-header');
@@ -581,20 +601,51 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Gallery Next/Prev
-  document.getElementById('modal-gallery-prev')?.addEventListener('click', (e) => {
-    e.stopPropagation();
+  // Gallery Next/Prev with Touch Swipe Support
+  const prevGalleryImage = () => {
     if (!activeListingData) return;
     currentGalleryIndex = (currentGalleryIndex - 1 + activeListingData.images.length) % activeListingData.images.length;
     updateGalleryImage();
+  };
+
+  const nextGalleryImage = () => {
+    if (!activeListingData) return;
+    currentGalleryIndex = (currentGalleryIndex + 1) % activeListingData.images.length;
+    updateGalleryImage();
+  };
+
+  document.getElementById('modal-gallery-prev')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    prevGalleryImage();
   });
 
   document.getElementById('modal-gallery-next')?.addEventListener('click', (e) => {
     e.stopPropagation();
-    if (!activeListingData) return;
-    currentGalleryIndex = (currentGalleryIndex + 1) % activeListingData.images.length;
-    updateGalleryImage();
+    nextGalleryImage();
   });
+
+  // Touch Swipe Gesture for Modal Gallery on Mobile
+  const modalGalleryEl = document.querySelector('.modal-gallery');
+  if (modalGalleryEl) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    modalGalleryEl.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    modalGalleryEl.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const swipeDistance = touchEndX - touchStartX;
+      if (Math.abs(swipeDistance) > 40) {
+        if (swipeDistance < 0) {
+          nextGalleryImage(); // swipe left -> next image
+        } else {
+          prevGalleryImage(); // swipe right -> prev image
+        }
+      }
+    }, { passive: true });
+  }
 
   // Photo Lightbox Trigger
   document.querySelectorAll('[data-lightbox-src]').forEach(trigger => {
