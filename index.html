@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Zeris Real Estate — Dense City Apartments & Slow Hillside Escapes</title>
+  <meta name="description" content="Boutique Mumbai real estate brokerage serving Western Suburbs (Versova, Lokhandwala, Bandra) and hillside weekend retreats (Lonavala). Buy, sell, and rent under one trusted relationship.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Zeris Real Estate — Two Skylines: Mumbai & Lonavala">
+  <meta property="og:description" content="One broker who understands both the pace you live at in the city, and the pace you're buying for on weekends.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zerisrealestate.com">
+
+  <!-- Google Fonts: Fraunces, Instrument Sans, Fragment Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=2033">
+</head>
+<body class="has-hero-transparent">
+
+  <!-- =========================================================================
+       Header & Navigation (Transparent Hero Header)
+       ========================================================================= -->
+  <header class="site-header site-header-transparent" id="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <!-- Brand Lockup -->
+        <a href="index.html" class="brand-lockup" id="nav-brand">
+          <div class="brand-badge" aria-hidden="true">
+            <!-- Skyline-to-contour minimalist emblem -->
+            <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18h18" />
+              <path d="M4 18v-6h3v6" />
+              <path d="M7 18v-10h4v10" />
+              <path d="M11 18v-4h3v4" />
+              <path d="M14 18c1-3 3-5 5-2 1.5 2.2 2 2 2" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Zeris</span>
+            <span class="brand-sub">Real Estate · Mumbai & Lonavala</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" id="desktop-nav-links">
+          <li><a href="listings.html" class="nav-link">Listings</a></li>
+          <li><a href="neighbourhoods.html" class="nav-link">Neighbourhoods</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Direct WhatsApp Action -->
+        <div class="nav-actions">
+          <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-nav" id="nav-whatsapp-cta" aria-label="Inquire on WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.05-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.216 8.216 0 0 1-1.25-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.5 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+            </svg>
+            <span>Inquire on WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" id="hamburger-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-in Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Menu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="listings.html" class="mobile-nav-link">Listings</a></li>
+      <li><a href="neighbourhoods.html" class="mobile-nav-link">Neighbourhoods</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+        Direct WhatsApp Chat
+      </a>
+      <span class="mono-spec" style="color:var(--stone);font-size:0.75rem;text-align:center;">Instagram: @zeris.realestate</span>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =========================================================================
+         Cinematic Hero Section ("Two Skylines" — Dunowen House Editorial Inspiration)
+         ========================================================================= -->
+    <section class="hero-cinematic-banner" id="hero" aria-labelledby="hero-heading">
+      
+      <!-- Static Cinematic Hero Background Media -->
+      <div class="hero-bg-media">
+        <!-- DEMO PLACEHOLDER — replace with real client photography -->
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=85" alt="Luxury Mumbai coastal high-rise sea-view residence" class="hero-parallax-img">
+      </div>
+
+      <!-- Cinematic Scrim Gradient -->
+      <div class="hero-cinematic-scrim"></div>
+
+      <!-- Lower Split Editorial Overlay -->
+      <div class="hero-editorial-overlay">
+        <div class="container">
+          <div class="hero-split-grid">
+            
+            <!-- Left: Territory Pill & Headline -->
+            <div class="hero-left-box reveal-init reveal-city">
+              <div class="hero-territory-badge" id="hero-current-tag">
+                <span style="color:var(--brass-light);">★</span>
+                <span>Mumbai West & Lonavala Hills</span>
+              </div>
+
+              <h1 class="hero-cinematic-title" id="hero-heading">
+                One broker who understands both the <em>pace you live at</em> in the city, and the pace you're buying for on <em>weekends</em>.
+              </h1>
+            </div>
+
+            <!-- Right: Editorial Narrative Box with Dunowen Long Arrow Link & WhatsApp -->
+            <div class="hero-right-box reveal-init reveal-city stagger-2">
+              <p class="hero-cinematic-desc" id="hero-desc-text">
+                From high-floor sea-facing duplexes in Versova, Lokhandwala, and Bandra to unhurried hillside bungalow retreats in Lonavala. Curated property acquisitions grounded in verified transparency.
+              </p>
+
+              <div class="hero-actions-row">
+                <a href="listings.html" class="hero-arrow-link">
+                  EXPLORE PORTFOLIO
+                  <svg class="long-arrow" viewBox="0 0 50 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M44.06.515a.67.67 0 0 1 .937-.146l4.283 3.135c.46.335.722.822.721 1.334 0 .513-.266.998-.727 1.332l-4.279 3.1a.673.673 0 0 1-.937-.15.67.67 0 0 1 .15-.937l3.717-2.693H0V4.147h47.886l-3.682-2.694a.67.67 0 0 1-.144-.938" fill="currentColor"></path>
+                  </svg>
+                </a>
+                
+                <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20Mumbai%20and%20Lonavala%20properties." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid" style="padding:0.7rem 1.25rem; font-size:0.8rem;">
+                  <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                  WhatsApp Desk
+                </a>
+              </div>
+
+              <!-- Territory Quick Ticker Bar -->
+              <div class="hero-ticker-bar">
+                <div class="hero-ticker-item">
+                  <span class="hero-ticker-label">City Corridors</span>
+                  <span class="hero-ticker-val">Versova · Lokhandwala · Bandra</span>
+                </div>
+                <div class="hero-ticker-item">
+                  <span class="hero-ticker-label">Hill Retreats</span>
+                  <span class="hero-ticker-val">Tungarli · Lonavala Hills</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =========================================================================
+         Section 2: Neighbourhoods Strip (4 Editorial Cards)
+         ========================================================================= -->
+    <section class="section bg-panel" id="neighbourhoods-strip">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-pill">
+            <span class="eyebrow-dot"></span>
+            Operational Territories
+          </div>
+          <h2>Four Distinct Micro-Markets</h2>
+          <p>Each neighbourhood carries its own cadence, valuation dynamics, and lifestyle rhythm. We navigate each with deep, ground-level fluency.</p>
+        </div>
+
+        <div class="cards-grid-4">
+          <!-- Versova Card -->
+          <a href="neighbourhoods.html#versova" class="neighbourhood-card reveal-init reveal-city stagger-1">
+            <div class="neighbourhood-media">
+              <!-- DEMO PLACEHOLDER — replace with real client photography -->
+              <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Versova Beach coastal residences">
+            </div>
+            <div class="neighbourhood-body">
+              <span class="neighbourhood-tag">City Market</span>
+              <h3 class="neighbourhood-title">Versova</h3>
+              <p class="neighbourhood-desc">Artistic coastal enclave, sea-facing duplexes, tranquil Yari Road lanes, and café culture.</p>
+              <span class="neighbourhood-link">Explore Versova &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Lokhandwala Card -->
+          <a href="neighbourhoods.html#lokhandwala" class="neighbourhood-card reveal-init reveal-city stagger-2">
+            <div class="neighbourhood-media">
+              <!-- DEMO PLACEHOLDER — replace with real client photography -->
+              <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80" alt="Lokhandwala bustling urban core">
+            </div>
+            <div class="neighbourhood-body">
+              <span class="neighbourhood-tag">City Market</span>
+              <h3 class="neighbourhood-title">Lokhandwala</h3>
+              <p class="neighbourhood-desc">Vibrant cosmopolitan hub, premier gated towers, clubhouses, and prime retail promenades.</p>
+              <span class="neighbourhood-link">Explore Lokhandwala &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Bandra Card -->
+          <a href="neighbourhoods.html#bandra" class="neighbourhood-card reveal-init reveal-city stagger-3">
+            <div class="neighbourhood-media">
+              <!-- DEMO PLACEHOLDER — replace with real client photography -->
+              <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Linking Road Bandra prime luxury properties">
+            </div>
+            <div class="neighbourhood-body">
+              <span class="neighbourhood-tag">City Market</span>
+              <h3 class="neighbourhood-title">Linking Rd, Bandra</h3>
+              <p class="neighbourhood-desc">Premier luxury corridor, generational legacy addresses, heritage villas, and capital stability.</p>
+              <span class="neighbourhood-link">Explore Bandra &rarr;</span>
+            </div>
+          </a>
+
+          <!-- Lonavala Card -->
+          <a href="neighbourhoods.html#lonavala" class="neighbourhood-card reveal-init reveal-escape stagger-4">
+            <div class="neighbourhood-media">
+              <!-- DEMO PLACEHOLDER — replace with real client photography -->
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Lonavala green hillside landscape">
+            </div>
+            <div class="neighbourhood-body">
+              <span class="neighbourhood-tag escape">Weekend Escape</span>
+              <h3 class="neighbourhood-title">Lonavala Hills</h3>
+              <p class="neighbourhood-desc">Standalone monsoon bungalows, private plot sanctuaries, mist views, and serene hill escapes.</p>
+              <span class="neighbourhood-link" style="color:var(--olive);">Explore Lonavala &rarr;</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Section 3: Featured Listings Preview (2 Verified Cards)
+         ========================================================================= -->
+    <section class="section bg-cream" id="featured-listings">
+      <div class="container">
+        <div class="section-header" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:1.5rem;">
+          <div>
+            <div class="eyebrow-pill">
+              <span class="eyebrow-dot"></span>
+              Verified Portfolio Preview
+            </div>
+            <h2>Featured Residences</h2>
+            <p>Direct, verified inventory with confirmed documentation and transparent deal parameters.</p>
+          </div>
+          <a href="listings.html" class="btn btn-secondary">View All Listings &rarr;</a>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Listing 1: Azad Nagar 2BHK + Terrace -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" onclick="openListingModal('AZD-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Spacious 2 BHK + Terrace in Azad Nagar">
+              <span class="listing-badge-tag tag-city">City Residence</span>
+              <span class="listing-code-tag">AZD·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="AZD-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('AZD-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Azad Nagar, Andheri West, Mumbai
+              </span>
+              <h3 class="listing-card-title">Spacious 2 BHK + Terrace</h3>
+              <p style="font-size:0.95rem; margin-bottom:1rem;">Private open-sky terrace, excellent cross-ventilation, higher level floor, ready for immediate handover.</p>
+              
+              <div class="listing-specs-row">
+                <div class="spec-item">
+                  <span class="spec-item-label">Configuration</span>
+                  <span class="spec-item-val">2 Bed · 2 Bath</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-item-label">Outdoor</span>
+                  <span class="spec-item-val">Private Terrace</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-item-label">Status</span>
+                  <span class="spec-item-val">For Sale</span>
+                </div>
+              </div>
+
+              <div class="listing-card-footer">
+                <div>
+                  <span class="spec-item-label">Listing Valuation</span>
+                  <span class="listing-price">₹3.50 Cr</span>
+                </div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('AZD-01');">
+                  Inspect Specs
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Listing 2: Lonavala 3BHK Bungalow -->
+          <article class="listing-card listing-card-item reveal-init reveal-escape stagger-2" onclick="openListingModal('LON-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="3BHK Bungalow in Tungarli Lonavala">
+              <span class="listing-badge-tag tag-escape">Weekend Hillside</span>
+              <span class="listing-code-tag">LON·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="LON-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('LON-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Tungarli, Lonavala Hills
+              </span>
+              <h3 class="listing-card-title">3BHK Hillside Bungalow</h3>
+              <p style="font-size:0.95rem; margin-bottom:1rem;">Standalone mountain-view bungalow with a private landscaped lawn, wrap-around veranda, and clear title.</p>
+              
+              <div class="listing-specs-row">
+                <div class="spec-item">
+                  <span class="spec-item-label">Built-up</span>
+                  <span class="spec-item-val">1,850 sq.ft.</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-item-label">Plot Size</span>
+                  <span class="spec-item-val">2,400 sq.ft.</span>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-item-label">Status</span>
+                  <span class="spec-item-val">For Sale</span>
+                </div>
+              </div>
+
+              <div class="listing-card-footer">
+                <div>
+                  <span class="spec-item-label">Valuation</span>
+                  <span class="listing-price">₹1.60 Cr</span>
+                </div>
+                <button class="btn btn-olive" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('LON-01');">
+                  Inspect Specs
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Section 4: Maharashtra Stamp Duty & Acquisition Calculator (Utility Tool)
+         ========================================================================= -->
+    <section class="section bg-panel" id="stamp-calculator-home">
+      <div class="container">
+        <div class="stamp-calculator-card reveal-init reveal-city" style="margin-top:0;">
+          <div class="eyebrow-pill" style="background:rgba(184,147,90,0.15); color:var(--brass);">
+            <span class="eyebrow-dot"></span>
+            Financial Clarity Tool
+          </div>
+          <h2 style="font-size:clamp(1.8rem, 3.2vw, 2.5rem); margin-top:0.6rem; margin-bottom:0.5rem;">
+            Maharashtra Stamp Duty &amp; Acquisition Calculator
+          </h2>
+          <p style="font-size:1rem; color:var(--stone); margin-bottom:1.5rem;">
+            Calculate your exact statutory out-of-pocket costs (Stamp Duty, 1% Metro Cess, and Government Registration cap) before issuing any token payment in Mumbai or Lonavala.
+          </p>
+
+          <div class="calc-grid">
+            <div class="calc-input-group">
+              <div class="calc-field">
+                <label class="calc-label" for="stamp-calc-price">Agreed Property Valuation (₹)</label>
+                <input type="number" id="stamp-calc-price" class="calc-input" value="35000000" step="500000" min="0">
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label" for="stamp-calc-loc">Territory / Municipal Jurisdiction</label>
+                <select id="stamp-calc-loc" class="calc-input" style="cursor:pointer;">
+                  <option value="mumbai">Mumbai City &amp; Western Suburbs (+1% Metro Cess)</option>
+                  <option value="lonavala">Lonavala / Pune District (No Metro Cess)</option>
+                </select>
+              </div>
+
+              <div class="calc-field">
+                <label class="calc-label">Purchaser Classification</label>
+                <div class="calc-radio-group">
+                  <button type="button" class="calc-radio-btn is-selected" data-calc-gender="male">Male (6%)</button>
+                  <button type="button" class="calc-radio-btn" data-calc-gender="female">Female (5%)</button>
+                  <button type="button" class="calc-radio-btn" data-calc-gender="joint">Joint (5.5%)</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-results-card">
+              <div class="calc-results-header">
+                <span class="calc-results-title">Estimated Acquisition Breakdown</span>
+              </div>
+
+              <div class="calc-row-item">
+                <span>Statutory Stamp Duty</span>
+                <span class="calc-row-val" id="stamp-out-duty">₹21,00,000</span>
+              </div>
+              <div class="calc-row-item">
+                <span>Mumbai Metro Cess (1%)</span>
+                <span class="calc-row-val" id="stamp-out-cess">₹3,50,000</span>
+              </div>
+              <div class="calc-row-item">
+                <span>Govt Registration Fee (Cap ₹30,000)</span>
+                <span class="calc-row-val" id="stamp-out-reg">₹30,000</span>
+              </div>
+
+              <div class="calc-total-row">
+                <span class="calc-total-label">Total Out-of-Pocket</span>
+                <span class="calc-total-val" id="stamp-out-total">₹3,74,80,000</span>
+              </div>
+
+              <p class="calc-disclaimer">
+                * Rates computed in accordance with the Maharashtra Stamp Act &amp; Ready Reckoner guidelines. Society transfer fees and biometric registry coordination handled seamlessly by Zeris Real Estate.
+              </p>
+
+              <a href="#" id="stamp-calc-whatsapp" class="btn btn-whatsapp-solid" target="_blank" rel="noopener noreferrer" style="justify-content:center; padding:0.75rem 1rem; font-size:0.85rem; margin-top:0.5rem;">
+                <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                Discuss Acquisition Numbers with Advisory Desk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Section 5: The Zeris Standard Teaser
+         ========================================================================= -->
+    <section class="section bg-cream" id="standard-teaser">
+      <div class="container">
+        <div class="standard-editorial reveal-init reveal-city text-center">
+          <div class="eyebrow-pill" style="margin-left:auto; margin-right:auto;">
+            <span class="eyebrow-dot"></span>
+            The Zeris Standard
+          </div>
+          <h2>"Honesty, Integrity, Efficiency"</h2>
+          <p class="lead-text" style="margin-top:1.5rem; margin-bottom:2rem;">
+            Real estate in Mumbai's western coastline and Lonavala's hills isn't just about square footage. It is about legal title security, transparent valuation benchmarks, and finding a partner who respects both your investment rigor and your personal retreat sanctuary.
+          </p>
+          <a href="about.html" class="btn btn-primary">Read Our Philosophy & The Zeris Standard &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Section 5: Contact CTA Band (Charcoal Dark Band)
+         ========================================================================= -->
+    <section class="contact-section-dark" id="contact-band">
+      <div class="container">
+        <div class="contact-box-grid">
+          <div class="reveal-init reveal-city">
+            <div class="eyebrow-pill" style="background:rgba(216,183,128,0.12); border-color:rgba(216,183,128,0.3); color:var(--brass-light);">
+              <span class="eyebrow-dot" style="background-color:var(--brass-light);"></span>
+              Direct Advisory Engagement
+            </div>
+            <h2 style="color:var(--cream); margin-bottom:1rem;">Ready to discuss a property or explore acquisitions?</h2>
+            <p style="color:#BDB6A8; margin-bottom:2rem;">
+              We maintain immediate, responsive communication across Mumbai and Lonavala. Connect directly via WhatsApp or message us on our active Instagram channel.
+            </p>
+            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+              <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20discuss%20property%20acquisitions." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid whatsapp-pulse-btn">
+                <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+                Connect on WhatsApp
+              </a>
+              <a href="https://instagram.com/zeris.realestate" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="border-color:rgba(248,244,236,0.3); color:var(--cream);">
+                Instagram: @zeris.realestate
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-channel-card reveal-init reveal-city stagger-2">
+            <div class="channel-item">
+              <div class="channel-icon whatsapp-bg">
+                <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Primary Response Line</span>
+                <span class="channel-val">WhatsApp Concierge</span>
+                <span class="channel-note">Direct agent access for showings & specs</span>
+              </div>
+            </div>
+
+            <div class="channel-item">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Active Social Feed</span>
+                <span class="channel-val">@zeris.realestate</span>
+                <span class="channel-note">Live listing stories, tours & market reels</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+     Shared Footer
+     ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-lockup">
+            <div class="brand-badge" style="border-color:var(--brass-light); background:rgba(248,244,236,0.08);">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--brass-light)" fill="none">
+                <path d="M3 18h18" />
+                <path d="M4 18v-6h3v6" />
+                <path d="M7 18v-10h4v10" />
+                <path d="M11 18v-4h3v4" />
+                <path d="M14 18c1-3 3-5 5-2 1.5 2.2 2 2 2" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Zeris</span>
+              <span class="brand-sub">Real Estate · Mumbai & Lonavala</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Bridging fast-paced Mumbai coastal apartments and slow hillside retreats in Lonavala under one rigorous advisory standard.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings (Buy / Rent)</a></li>
+            <li><a href="neighbourhoods.html">Neighbourhoods</a></li>
+            <li><a href="services.html">Advisory Services</a></li>
+            <li><a href="about.html">About The Standard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Service Areas</h4>
+          <ul class="footer-nav-list">
+            <li><a href="neighbourhoods.html#versova">Versova, Andheri West</a></li>
+            <li><a href="neighbourhoods.html#lokhandwala">Lokhandwala Complex</a></li>
+            <li><a href="neighbourhoods.html#bandra">Linking Road, Bandra</a></li>
+            <li><a href="neighbourhoods.html#lonavala">Tungarli & Lonavala Hills</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Channels</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://instagram.com/zeris.realestate" target="_blank" rel="noopener noreferrer">Instagram: @zeris.realestate</a></li>
+            <li><a href="https://wa.me/919920897015" target="_blank" rel="noopener noreferrer">WhatsApp: +91 99208 97015</a></li>
+            <li><a href="services.html#due-diligence">Legal & Due Diligence</a></li>
+            <li><a href="services.html#property-management">Property Management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-prototype-disclaimer">
+          Concept Prototype · Built for Zeris Real Estate · Verified Active Profile @zeris.realestate
+        </div>
+        <div class="footer-copyright">
+          © <span id="year">2026</span> Zeris Real Estate. Honesty · Integrity · Efficiency.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Curated Modals & Affordances
+       ========================================================================= -->
+
+  <!-- 1. Listing Detail Modal -->
+  <div class="modal-overlay" id="listing-detail-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-listing-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-gallery">
+        <img id="modal-gallery-img" src="" alt="Property Gallery Photograph">
+        <button class="gallery-nav-btn gallery-prev" id="modal-gallery-prev" aria-label="Previous image">&#8592;</button>
+        <button class="gallery-nav-btn gallery-next" id="modal-gallery-next" aria-label="Next image">&#8594;</button>
+        <span class="mono-spec" id="modal-gallery-counter" style="position:absolute; bottom:1rem; right:1rem; background:rgba(35,30,24,0.85); color:#fff; padding:0.25rem 0.65rem; border-radius:4px; font-size:0.75rem;">1 / 3</span>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-header-row">
+          <div>
+            <span class="mono-spec" id="modal-listing-code" style="color:var(--brass); font-weight:600; font-size:0.85rem;"></span>
+            <h2 id="modal-listing-title" style="font-size:1.85rem; margin:0.3rem 0;"></h2>
+            <span class="mono-spec" id="modal-listing-location" style="color:var(--stone);"></span>
+          </div>
+          <div style="text-align:right;">
+            <span class="mono-spec" style="font-size:0.75rem; color:var(--stone); display:block;">Asking Price</span>
+            <span id="modal-listing-price" style="font-family:var(--font-display); font-size:1.65rem; font-weight:600; color:var(--charcoal);"></span>
+          </div>
+        </div>
+
+        <p id="modal-listing-desc" style="margin-bottom:1.5rem;"></p>
+
+        <h4 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.06em; font-family:var(--font-mono); color:var(--stone);">Specifications & Title</h4>
+        <div class="modal-specs-grid" id="modal-specs-container"></div>
+
+        <div style="display:flex; justify-content:flex-end; flex-wrap:wrap; gap:0.75rem; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--panel-border);">
+          <button class="btn btn-secondary" id="modal-share-btn" title="Copy Direct Link to Property">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            Share Dossier
+          </button>
+          <button class="btn btn-secondary" onclick="window.print()" title="Print or Save PDF Spec Sheet">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+            Print
+          </button>
+          <button class="btn btn-secondary" data-modal-close>Close Details</button>
+          <a href="#" id="modal-whatsapp-cta" class="btn btn-whatsapp-solid">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Inquire on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Photo Lightbox Modal -->
+  <div class="modal-overlay" id="photo-lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog lightbox-dialog">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Lightbox" style="background:rgba(248,244,236,0.92);">&times;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightbox-target-img" src="" alt="Enlarged Photograph View">
+      </div>
+      <p class="lightbox-caption" id="lightbox-target-caption"></p>
+    </div>
+  </div>
+
+  <!-- 3. Quick "Enquire Now" Modal -->
+  <div class="modal-overlay" id="quick-enquire-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width:520px;">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Modal">&times;</button>
+      <div class="modal-body" style="padding:2.5rem 2rem;">
+        <span class="eyebrow-pill" style="margin-bottom:0.75rem;">
+          <span class="eyebrow-dot"></span>
+          Quick WhatsApp Access
+        </span>
+        <h3 style="margin-bottom:0.75rem;">Connect with Zeris Real Estate</h3>
+        <p style="margin-bottom:1.75rem; font-size:0.95rem;">
+          We operate transparently with direct, form-free communication. Click below to start a conversation with our advisory desk on WhatsApp.
+        </p>
+        <div style="background:var(--panel); border:1px solid var(--panel-border); border-radius:6px; padding:1rem; margin-bottom:1.5rem;">
+          <span class="mono-spec" style="font-size:0.75rem; color:var(--stone); display:block;">Typical Response Time</span>
+          <span style="font-weight:600; color:var(--charcoal); font-size:0.95rem;">Under 15 Minutes during operating hours</span>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20available%20properties%20in%20Mumbai%20and%20Lonavala." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid" style="width:100%;">
+            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Launch WhatsApp Direct Chat
+          </a>
+          <button class="btn btn-secondary" data-modal-close style="width:100%;">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Floating Enquire Button (Desktop) -->
+  <button class="floating-enquire-affordance" data-open-enquire aria-label="Enquire Now on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+    <span>Enquire Now</span>
+  </button>
+
+  <!-- Sticky WhatsApp Bar (Mobile) -->
+  <div class="mobile-sticky-bar">
+    <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid" style="width:100%;">
+      <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+      Chat with Zeris on WhatsApp
+    </a>
+  </div>
+
+  <script src="main.js?v=2032"></script>
+</body>
+</html>

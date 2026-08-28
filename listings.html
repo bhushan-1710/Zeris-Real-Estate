@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Verified Property Portfolio — Zeris Real Estate | Mumbai & Lonavala</title>
+  <meta name="description" content="Explore verified residential apartments in Versova, Lokhandwala, and Bandra, plus hillside weekend homes in Lonavala. Filter by Buy, Rent, and territory.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css?v=2033">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Header & Navigation
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <a href="index.html" class="brand-lockup" id="nav-brand">
+          <div class="brand-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18h18" />
+              <path d="M4 18v-6h3v6" />
+              <path d="M7 18v-10h4v10" />
+              <path d="M11 18v-4h3v4" />
+              <path d="M14 18c1-3 3-5 5-2 1.5 2.2 2 2 2 2" />
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Zeris</span>
+            <span class="brand-sub">Real Estate · Mumbai & Lonavala</span>
+          </div>
+        </a>
+
+        <ul class="nav-links" id="desktop-nav-links">
+          <li><a href="listings.html" class="nav-link active">Listings</a></li>
+          <li><a href="neighbourhoods.html" class="nav-link">Neighbourhoods</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20available%20listings." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-nav" id="nav-whatsapp-cta">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.42 0-2.82-.37-4.05-1.08l-.29-.17-3.12.82.83-3.04-.19-.3a8.216 8.216 0 0 1-1.25-4.47c0-4.54 3.7-8.24 8.24-8.24zm4.5 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.07-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.43.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"/>
+            </svg>
+            <span>Inquire on WhatsApp</span>
+          </a>
+        </div>
+
+        <button class="hamburger-btn" id="hamburger-toggle" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-in Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-backdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Menu">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="listings.html" class="mobile-nav-link active">Listings</a></li>
+      <li><a href="neighbourhoods.html" class="mobile-nav-link">Neighbourhoods</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid">
+        <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+        Direct WhatsApp Chat
+      </a>
+      <span class="mono-spec" style="color:var(--stone);font-size:0.75rem;text-align:center;">Instagram: @zeris.realestate</span>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Page Header (Editorial Luxury Banner) -->
+    <section class="page-hero-banner">
+      <div class="container">
+        <div class="reveal-init reveal-city">
+          <div class="eyebrow-pill">
+            <span class="eyebrow-dot"></span>
+            Verified Inventory
+          </div>
+          <h1>Current Property Portfolio</h1>
+          <p style="max-width: 680px; margin-top: 0.75rem;">
+            Every listing published below is directly verified for title clarity, physical specifications, and transparent terms. Click any card to inspect full measurements and connect on WhatsApp.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings & Filter Section -->
+    <section class="section bg-panel" id="listings-view">
+      <div class="container">
+        <!-- Filter Bar (Buy, Rent, Commercial on the Same Unified Page) -->
+        <div class="filter-bar reveal-init reveal-city">
+          <div class="filter-group">
+            <span class="filter-label">Intent</span>
+            <div class="filter-tabs">
+              <button class="filter-tab-btn is-active" data-filter="all">All (10)</button>
+              <button class="filter-tab-btn" data-filter="buy">For Sale</button>
+              <button class="filter-tab-btn" data-filter="rent">For Rent</button>
+              <button class="filter-tab-btn" data-filter="commercial">Commercial</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-label">Territory</span>
+            <select class="filter-select" id="filter-area-select" aria-label="Filter listings by neighbourhood">
+              <option value="all">All Territories (Mumbai & Lonavala)</option>
+              <option value="versova">Versova & Yari Road</option>
+              <option value="andheri">Andheri West & Azad Nagar</option>
+              <option value="lonavala">Tungarli & Lonavala Hills</option>
+            </select>
+          </div>
+
+          <div class="filter-count" id="filter-results-count">
+            10 Listings Shown
+          </div>
+        </div>
+
+        <!-- Listings Grid (All 10 Real Properties) -->
+        <div class="cards-grid" id="listings-container">
+          
+          <!-- Property 1: Azad Nagar 2BHK + Terrace -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="buy rent" data-area="andheri" onclick="openListingModal('AZD-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Spacious 2 BHK + Terrace in Azad Nagar">
+              <span class="listing-badge-tag tag-city">For Sale / Rent</span>
+              <span class="listing-code-tag">AZD·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="AZD-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('AZD-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Azad Nagar, Andheri West, Mumbai
+              </span>
+              <h3 class="listing-card-title">Spacious 2 BHK + Terrace</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Private open-sky terrace, excellent cross-ventilation, higher level floor, ready for immediate handover.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Configuration</span><span class="spec-item-val">2 Bed · 2 Bath</span></div>
+                <div class="spec-item"><span class="spec-item-label">Outdoor</span><span class="spec-item-val">Private Terrace</span></div>
+                <div class="spec-item"><span class="spec-item-label">Status</span><span class="spec-item-val">Sale / Rent</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Valuation</span><span class="listing-price">₹3.50 Cr</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('AZD-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 2: Fully Furnished 2 BHK Yari Road -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="rent" data-area="versova" onclick="openListingModal('YAR-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=900&q=80" alt="Fully Furnished 2 BHK on Yari Road">
+              <span class="listing-badge-tag tag-city">For Rent</span>
+              <span class="listing-code-tag">YAR·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="YAR-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('YAR-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Yari Road, Versova, Mumbai
+              </span>
+              <h3 class="listing-card-title">Fully Furnished 2 BHK</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Turnkey furnished residence with custom woodwork, modular kitchen, AC units, and quiet tree-lined lanes.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Layout</span><span class="spec-item-val">2 Bed · 2 Bath</span></div>
+                <div class="spec-item"><span class="spec-item-label">Furnishing</span><span class="spec-item-val">Fully Furnished</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Rent</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Monthly Rent</span><span class="listing-price">₹50,000 / mo</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('YAR-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 3: Commercial Shop Outright Sale -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="buy commercial" data-area="andheri" onclick="openListingModal('COM-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80" alt="Commercial Shop for Outright Sale">
+              <span class="listing-badge-tag tag-city" style="background:var(--brass); color:#fff;">Commercial Sale</span>
+              <span class="listing-code-tag">COM·01</span>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Andheri West, Mumbai
+              </span>
+              <h3 class="listing-card-title">Commercial Shop (Outright)</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Prime ground floor high-street retail shop with prominent glass frontage and heavy pedestrian footfall.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Asset Type</span><span class="spec-item-val">Ground Retail</span></div>
+                <div class="spec-item"><span class="spec-item-label">Title</span><span class="spec-item-val">Freehold Clear</span></div>
+                <div class="spec-item"><span class="spec-item-label">Terms</span><span class="spec-item-val">Negotiable</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Asking Price</span><span class="listing-price">₹2.50 Cr</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('COM-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 4: Spacious 3 BHK Yari Road -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="rent" data-area="versova" onclick="openListingModal('YAR-02')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Spacious 3 BHK for Rent on Yari Road">
+              <span class="listing-badge-tag tag-city">For Rent</span>
+              <span class="listing-code-tag">YAR·02</span>
+              <button class="shortlist-btn" data-shortlist-btn="YAR-02" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('YAR-02');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Yari Road, Versova, Mumbai
+              </span>
+              <h3 class="listing-card-title">Spacious 3 BHK Residence</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Grand 3 BHK on high floor with panoramic open views, sea breeze ventilation, and 1 covered stilt parking.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Layout</span><span class="spec-item-val">3 Bed · 3 Bath</span></div>
+                <div class="spec-item"><span class="spec-item-label">Floor</span><span class="spec-item-val">High Level</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Rent</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Monthly Rent</span><span class="listing-price">₹1.10 L / mo</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('YAR-02');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 5: 2 BHK Partial Sea View -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="rent" data-area="versova" onclick="openListingModal('SEA-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=80" alt="2 BHK Partial Sea View in Versova">
+              <span class="listing-badge-tag tag-city">For Rent</span>
+              <span class="listing-code-tag">SEA·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="SEA-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('SEA-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Versova Coast, Andheri West
+              </span>
+              <h3 class="listing-card-title">2 BHK Partial Sea View</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Prime coastal location enjoying morning light, open ocean vistas, verified society records, and reserved parking.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Configuration</span><span class="spec-item-val">2 Bed · 2 Bath</span></div>
+                <div class="spec-item"><span class="spec-item-label">View</span><span class="spec-item-val">Partial Sea</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Rent</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Monthly Rent</span><span class="listing-price">₹72,500 / mo</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('SEA-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 6: Corporate Office in Crystal Plaza -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="rent commercial" data-area="andheri" onclick="openListingModal('OFC-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="Corporate Office in Crystal Plaza">
+              <span class="listing-badge-tag tag-city" style="background:var(--brass); color:#fff;">Commercial Rent</span>
+              <span class="listing-code-tag">OFC·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="OFC-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('OFC-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Crystal Plaza, New Link Road, Andheri West
+              </span>
+              <h3 class="listing-card-title">Office in Crystal Plaza</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Fully fitted commercial office unit with private cabins and workstation area in landmark Link Road hub.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Type</span><span class="spec-item-val">Fitted Office</span></div>
+                <div class="spec-item"><span class="spec-item-label">Complex</span><span class="spec-item-val">Crystal Plaza</span></div>
+                <div class="spec-item"><span class="spec-item-label">Power</span><span class="spec-item-val">100% Backup</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Monthly Lease</span><span class="listing-price">₹1.00 L / mo</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('OFC-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 7: 2 BHK with Terrace Andheri West -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="rent" data-area="andheri" onclick="openListingModal('AND-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1533779283484-84e14e91438d?auto=format&fit=crop&w=900&q=80" alt="2 BHK with Terrace in Andheri West">
+              <span class="listing-badge-tag tag-city">For Rent</span>
+              <span class="listing-code-tag">AND·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="AND-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('AND-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Andheri West, Mumbai
+              </span>
+              <h3 class="listing-card-title">2 BHK with Private Terrace</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Spacious 2 bedroom residence featuring an expansive private terrace area in a quiet residential pocket.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Layout</span><span class="spec-item-val">2 Bed · 2 Bath</span></div>
+                <div class="spec-item"><span class="spec-item-label">Terrace</span><span class="spec-item-val">Private Attached</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Rent</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Monthly Rent</span><span class="listing-price">₹45,000 / mo</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('AND-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 8: 2 BHK Apartment — Prime Location -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="buy" data-area="andheri" onclick="openListingModal('AND-02')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="2 BHK Apartment in Prime Location Andheri West">
+              <span class="listing-badge-tag tag-city">For Sale</span>
+              <span class="listing-code-tag">AND·02</span>
+              <button class="shortlist-btn" data-shortlist-btn="AND-02" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('AND-02');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Andheri West, Mumbai
+              </span>
+              <h3 class="listing-card-title">2 BHK Apartment — Prime Core</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Well-proportioned 2 BHK apartment in a gated residential community. 720 sq.ft. carpet area, clear title documentation.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Carpet Area</span><span class="spec-item-val">720 sq.ft.</span></div>
+                <div class="spec-item"><span class="spec-item-label">Configuration</span><span class="spec-item-val">2 Bed · 2 Bath</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Sale</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Asking Price</span><span class="listing-price">₹2.50 Cr</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('AND-02');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 9: Suman Apartments Yari Road -->
+          <article class="listing-card listing-card-item reveal-init reveal-city" data-type="buy" data-area="versova" onclick="openListingModal('SUM-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=900&q=80" alt="Suman Apartments on Yari Road Versova">
+              <span class="listing-badge-tag tag-city">For Sale</span>
+              <span class="listing-code-tag">SUM·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="SUM-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('SUM-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Yari Road, Versova, Mumbai
+              </span>
+              <h3 class="listing-card-title">Suman Apartments</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Established co-operative society flat with tranquil green surroundings, 710 sq.ft. carpet, and walking proximity to beach.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Carpet Area</span><span class="spec-item-val">710 sq.ft.</span></div>
+                <div class="spec-item"><span class="spec-item-label">Society</span><span class="spec-item-val">Suman CHS</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Sale</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Asking Price</span><span class="listing-price">₹2.50 Cr</span></div>
+                <button class="btn btn-primary" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('SUM-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 10: Lonavala Hillside Bungalow -->
+          <article class="listing-card listing-card-item reveal-init reveal-escape" data-type="buy" data-area="lonavala" onclick="openListingModal('LON-01')">
+            <div class="listing-card-media">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="3BHK Hillside Bungalow in Tungarli Lonavala">
+              <span class="listing-badge-tag tag-escape">Weekend Hillside</span>
+              <span class="listing-code-tag">LON·01</span>
+              <button class="shortlist-btn" data-shortlist-btn="LON-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('LON-01');" aria-label="Add to shortlist">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </button>
+            </div>
+            <div class="listing-card-body">
+              <span class="listing-card-location">
+                <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                Tungarli, Lonavala Hills
+              </span>
+              <h3 class="listing-card-title">3BHK Hillside Bungalow</h3>
+              <p style="font-size:0.92rem; margin-bottom:1rem;">Private gated compound with wrap-around lawns, monsoon mountain panorama, and verified freehold title.</p>
+              <div class="listing-specs-row">
+                <div class="spec-item"><span class="spec-item-label">Built-up</span><span class="spec-item-val">1,850 sq.ft.</span></div>
+                <div class="spec-item"><span class="spec-item-label">Plot Area</span><span class="spec-item-val">2,400 sq.ft.</span></div>
+                <div class="spec-item"><span class="spec-item-label">Intent</span><span class="spec-item-val">For Sale</span></div>
+              </div>
+              <div class="listing-card-footer">
+                <div><span class="spec-item-label">Valuation</span><span class="listing-price">₹1.60 Cr</span></div>
+                <button class="btn btn-olive" style="padding:0.6rem 1.1rem; font-size:0.8rem;" onclick="event.stopPropagation(); openListingModal('LON-01');">Inspect Specs</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Empty State Message (Honest, Non-padded) -->
+        <div id="listings-empty-message" style="display:none; text-align:center; padding:4rem 2rem; background:var(--panel-2); border:1px solid var(--panel-border); border-radius:var(--radius-md); margin-top:2rem;">
+          <span class="eyebrow" style="margin-bottom:0.5rem;">Off-Market & In-Progress Mandates</span>
+          <h3 style="margin-bottom:0.75rem;">No Public Listings Matching Selected Filters</h3>
+          <p style="max-width:560px; margin:0 auto 1.5rem;">
+            Zeris Real Estate does not fabricate or pad placeholder listings. We frequently manage confidential off-market mandates across Lokhandwala, Bandra, and Versova that are not publicly broadcast.
+          </p>
+          <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'm%20looking%20for%20available%20or%20off-market%20mandates." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Inquire for Confidential Mandates on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-lockup">
+            <div class="brand-badge" style="border-color:var(--brass-light); background:rgba(247,242,233,0.08);">
+              <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="var(--brass-light)" fill="none">
+                <path d="M3 18h18" />
+                <path d="M4 18v-6h3v6" />
+                <path d="M7 18v-10h4v10" />
+                <path d="M11 18v-4h3v4" />
+                <path d="M14 18c1-3 3-5 5-2 1.5 2.2 2 2 2 2" />
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Zeris</span>
+              <span class="brand-sub">Real Estate · Mumbai & Lonavala</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Bridging fast-paced Mumbai coastal apartments and slow hillside retreats in Lonavala under one rigorous advisory standard.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="listings.html">Listings (Buy / Rent)</a></li>
+            <li><a href="neighbourhoods.html">Neighbourhoods</a></li>
+            <li><a href="services.html">Advisory Services</a></li>
+            <li><a href="about.html">About The Standard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Service Areas</h4>
+          <ul class="footer-nav-list">
+            <li><a href="neighbourhoods.html#versova">Versova, Andheri West</a></li>
+            <li><a href="neighbourhoods.html#lokhandwala">Lokhandwala Complex</a></li>
+            <li><a href="neighbourhoods.html#bandra">Linking Road, Bandra</a></li>
+            <li><a href="neighbourhoods.html#lonavala">Tungarli & Lonavala Hills</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Channels</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://instagram.com/zeris.realestate" target="_blank" rel="noopener noreferrer">Instagram: @zeris.realestate</a></li>
+            <li><a href="https://wa.me/919920897015" target="_blank" rel="noopener noreferrer">WhatsApp: +91 99208 97015</a></li>
+            <li><a href="services.html#due-diligence">Legal & Due Diligence</a></li>
+            <li><a href="services.html#property-management">Property Management</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-prototype-disclaimer">
+          Concept Prototype · Built for Zeris Real Estate · Verified Active Profile @zeris.realestate
+        </div>
+        <div class="footer-copyright">
+          © <span id="year">2026</span> Zeris Real Estate. Honesty · Integrity · Efficiency.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Curated Modals -->
+  <!-- 1. Listing Detail Modal -->
+  <div class="modal-overlay" id="listing-detail-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-listing-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Modal">&times;</button>
+      
+      <div class="modal-gallery">
+        <img id="modal-gallery-img" src="" alt="Property Gallery Photograph">
+        <button class="gallery-nav-btn gallery-prev" id="modal-gallery-prev" aria-label="Previous image">&#8592;</button>
+        <button class="gallery-nav-btn gallery-next" id="modal-gallery-next" aria-label="Next image">&#8594;</button>
+        <span class="mono-spec" id="modal-gallery-counter" style="position:absolute; bottom:1rem; right:1rem; background:rgba(43,38,32,0.8); color:#fff; padding:0.25rem 0.6rem; border-radius:4px; font-size:0.75rem;">1 / 3</span>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-header-row">
+          <div>
+            <span class="mono-spec" id="modal-listing-code" style="color:var(--brass); font-weight:600; font-size:0.85rem;"></span>
+            <h2 id="modal-listing-title" style="font-size:1.8rem; margin:0.3rem 0;"></h2>
+            <span class="mono-spec" id="modal-listing-location" style="color:var(--stone);"></span>
+          </div>
+          <div style="text-align:right;">
+            <span class="mono-spec" style="font-size:0.75rem; color:var(--stone); display:block;">Asking Price</span>
+            <span id="modal-listing-price" style="font-family:var(--font-display); font-size:1.6rem; font-weight:600; color:var(--charcoal);"></span>
+          </div>
+        </div>
+
+        <p id="modal-listing-desc" style="margin-bottom:1.5rem;"></p>
+
+        <h4 style="font-size:1rem; text-transform:uppercase; letter-spacing:0.06em; font-family:var(--font-mono); color:var(--stone);">Specifications & Title</h4>
+        <div class="modal-specs-grid" id="modal-specs-container"></div>
+
+        <div style="display:flex; justify-content:flex-end; flex-wrap:wrap; gap:0.75rem; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--panel-border);">
+          <button class="btn btn-secondary" id="modal-share-btn" title="Copy Direct Link to Property">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+            Share Dossier
+          </button>
+          <button class="btn btn-secondary" onclick="window.print()" title="Print or Save PDF Spec Sheet">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><path d="M6 14h12v8H6z"/></svg>
+            Print
+          </button>
+          <button class="btn btn-secondary" data-modal-close>Close Details</button>
+          <a href="#" id="modal-whatsapp-cta" class="btn btn-whatsapp-solid">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Inquire on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Photo Lightbox Modal -->
+  <div class="modal-overlay" id="photo-lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog lightbox-dialog">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Lightbox" style="background:rgba(247,242,233,0.9);">&times;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightbox-target-img" src="" alt="Enlarged Photograph View">
+      </div>
+      <p class="lightbox-caption" id="lightbox-target-caption"></p>
+    </div>
+  </div>
+
+  <!-- 3. Quick "Enquire Now" Modal -->
+  <div class="modal-overlay" id="quick-enquire-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width:520px;">
+      <button class="modal-close-btn" data-modal-close aria-label="Close Modal">&times;</button>
+      <div class="modal-body" style="padding:2.5rem 2rem;">
+        <span class="eyebrow">Direct WhatsApp Line</span>
+        <h3 style="margin-bottom:0.75rem;">Connect with Zeris Real Estate</h3>
+        <p style="margin-bottom:1.75rem; font-size:0.95rem;">
+          Connect directly on WhatsApp with our advisory desk for fast details on available or upcoming properties.
+        </p>
+        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+          <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20available%20listings." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid" style="width:100%;">
+            <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+            Launch WhatsApp Direct Chat
+          </a>
+          <button class="btn btn-secondary" data-modal-close style="width:100%;">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Persistent Floating Enquire Button (Desktop) -->
+  <button class="floating-enquire-affordance" data-open-enquire aria-label="Enquire Now on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+    <span>Enquire Now</span>
+  </button>
+
+  <!-- Sticky WhatsApp Bar (Mobile) -->
+  <div class="mobile-sticky-bar">
+    <a href="https://wa.me/919920897015?text=Hi%20Zeris%20Real%20Estate,%20I'd%20like%20to%20inquire%20about%20your%20available%20listings." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-solid" style="width:100%;">
+      <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:#fff;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
+      Chat with Zeris on WhatsApp
+    </a>
+  </div>
+
+  <script src="main.js?v=2032"></script>
+</body>
+</html>
