@@ -1,10 +1,11 @@
-# Netlify configuration for Zeris Real Estate static site
 [build]
   publish = "."
-  command = ""
+  command = "echo 'Deploying static site'"
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_PLUGIN_FORCE_RUN = "false"
+  NODE_VERSION = "20"
 
 [[headers]]
   for = "/*"
