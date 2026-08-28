@@ -1,11 +1,10 @@
 [build]
   publish = "."
-  command = "echo 'Deploying static site'"
+  command = "mkdir -p .next"
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
   NEXT_PLUGIN_FORCE_RUN = "false"
-  NODE_VERSION = "20"
 
 [[headers]]
   for = "/*"
