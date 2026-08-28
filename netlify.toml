@@ -2,6 +2,11 @@
   publish = "dist"
   command = "mkdir -p dist && cp -r *.html *.css *.js 'pillars photos' dist/"
 
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
+  NEXT_PLUGIN_FORCE_RUN = "false"
+  NETLIFY_SKIP_NEXTJS_PLUGIN = "true"
+
 [[headers]]
   for = "/*"
   [headers.values]
