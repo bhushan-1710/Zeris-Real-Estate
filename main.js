@@ -837,15 +837,32 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ==========================================================================
-     8. Subtle Parallax Drift for Hero Photography
+     8. Hero Video Controller & Reduced Motion Handling
      ========================================================================== */
-  const heroImage = document.querySelector('.hero-parallax-img');
-  if (heroImage && !prefersReducedMotion) {
-    window.addEventListener('scroll', () => {
-      const scrollY = window.pageYOffset;
-      if (scrollY < 800) {
-        heroImage.style.transform = `translateY(${scrollY * 0.04}px)`;
+  const heroVideo = document.querySelector('.hero-bg-video');
+  if (heroVideo) {
+    if (prefersReducedMotion) {
+      heroVideo.pause();
+      heroVideo.removeAttribute('autoplay');
+    } else {
+      const playPromise = heroVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay prevented by browser power/data saver; poster image displays seamlessly
+        });
       }
-    }, { passive: true });
+    }
+
+    // Dynamic OS reduced-motion preference change listener
+    const motionMedia = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (motionMedia && motionMedia.addEventListener) {
+      motionMedia.addEventListener('change', (e) => {
+        if (e.matches) {
+          heroVideo.pause();
+        } else {
+          heroVideo.play().catch(() => {});
+        }
+      });
+    }
   }
 });

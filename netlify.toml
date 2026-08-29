@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "mkdir -p dist && cp -r *.html *.css *.js 'pillars photos' dist/"
+  command = "mkdir -p dist && cp -r *.html *.css *.js 'pillars photos' assets dist/"
 
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"

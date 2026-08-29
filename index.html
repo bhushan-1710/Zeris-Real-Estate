@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="assets/images/hero-bg-poster.jpg" fetchpriority="high">
   <link rel="stylesheet" href="styles.css?v=6000">
 </head>
 <body class="has-hero-transparent">
@@ -111,10 +112,12 @@
          ========================================================================= -->
     <section class="hero-cinematic-banner" id="hero" aria-labelledby="hero-heading">
       
-      <!-- Static Cinematic Hero Background Media -->
+      <!-- Cinematic Hero Background Video Media -->
       <div class="hero-bg-media">
-        <!-- DEMO PLACEHOLDER — replace with real client photography -->
-        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=85" alt="Luxury Mumbai coastal high-rise sea-view residence" class="hero-parallax-img">
+        <video class="hero-bg-video" autoplay muted loop playsinline poster="assets/images/hero-bg-poster.jpg" preload="metadata" aria-hidden="true">
+          <source src="assets/images/hero-bg.mp4" type="video/mp4">
+          <img src="assets/images/hero-bg-poster.jpg" alt="Luxury Mumbai coastal high-rise sea-view residence" class="hero-fallback-img" width="1920" height="1080" fetchpriority="high">
+        </video>
       </div>
 
       <!-- Cinematic Scrim Gradient -->
@@ -196,7 +199,7 @@
           <a href="neighbourhoods.html#versova" class="neighbourhood-card reveal-init reveal-city stagger-1">
             <div class="neighbourhood-media">
               <!-- DEMO PLACEHOLDER — replace with real client photography -->
-              <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Versova Beach coastal residences">
+              <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80" alt="Versova Beach coastal residences" width="800" height="533" loading="lazy" decoding="async">
             </div>
             <div class="neighbourhood-body">
               <span class="neighbourhood-tag">City Market</span>
@@ -210,7 +213,7 @@
           <a href="neighbourhoods.html#lokhandwala" class="neighbourhood-card reveal-init reveal-city stagger-2">
             <div class="neighbourhood-media">
               <!-- DEMO PLACEHOLDER — replace with real client photography -->
-              <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80" alt="Lokhandwala bustling urban core">
+              <img src="https://images.unsplash.com/photo-1567157577867-05ccb1388e66?auto=format&fit=crop&w=800&q=80" alt="Lokhandwala bustling urban core" width="800" height="533" loading="lazy" decoding="async">
             </div>
             <div class="neighbourhood-body">
               <span class="neighbourhood-tag">City Market</span>
@@ -224,7 +227,7 @@
           <a href="neighbourhoods.html#bandra" class="neighbourhood-card reveal-init reveal-city stagger-3">
             <div class="neighbourhood-media">
               <!-- DEMO PLACEHOLDER — replace with real client photography -->
-              <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Linking Road Bandra prime luxury properties">
+              <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Linking Road Bandra prime luxury properties" width="800" height="533" loading="lazy" decoding="async">
             </div>
             <div class="neighbourhood-body">
               <span class="neighbourhood-tag">City Market</span>
@@ -238,7 +241,7 @@
           <a href="neighbourhoods.html#lonavala" class="neighbourhood-card reveal-init reveal-escape stagger-4">
             <div class="neighbourhood-media">
               <!-- DEMO PLACEHOLDER — replace with real client photography -->
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Lonavala green hillside landscape">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Lonavala green hillside landscape" width="800" height="533" loading="lazy" decoding="async">
             </div>
             <div class="neighbourhood-body">
               <span class="neighbourhood-tag escape">Weekend Escape</span>
@@ -272,7 +275,7 @@
           <!-- Listing 1: Azad Nagar 2BHK + Terrace -->
           <article class="listing-card listing-card-item reveal-init reveal-city" onclick="openListingModal('AZD-01')">
             <div class="listing-card-media">
-              <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Spacious 2 BHK + Terrace in Azad Nagar">
+              <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=900&q=80" alt="Spacious 2 BHK + Terrace in Azad Nagar" width="900" height="600" loading="lazy" decoding="async">
               <span class="listing-badge-tag tag-city">City Residence</span>
               <span class="listing-code-tag">AZD·01</span>
               <button class="shortlist-btn" data-shortlist-btn="AZD-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('AZD-01');" aria-label="Add to shortlist">
@@ -317,7 +320,7 @@
           <!-- Listing 2: Lonavala 3BHK Bungalow -->
           <article class="listing-card listing-card-item reveal-init reveal-escape stagger-2" onclick="openListingModal('LON-01')">
             <div class="listing-card-media">
-              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="3BHK Bungalow in Tungarli Lonavala">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=900&q=80" alt="3BHK Bungalow in Tungarli Lonavala" width="900" height="600" loading="lazy" decoding="async">
               <span class="listing-badge-tag tag-escape">Weekend Hillside</span>
               <span class="listing-code-tag">LON·01</span>
               <button class="shortlist-btn" data-shortlist-btn="LON-01" title="Save to Shortlist" onclick="event.stopPropagation(); toggleShortlist('LON-01');" aria-label="Add to shortlist">
